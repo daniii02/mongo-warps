@@ -1,0 +1,59 @@
+# Configuración de la base de datos de MongoDB
+database:
+  # Dirección de la base de datos en formato ip:puerto
+  host: localhost:27017
+
+  # Nombre de la base de datos
+  database-name: warps
+
+  # Credenciales de la base de datos
+  username: root
+  password: ''
+
+  # URI de conexión a la base de datos, si se especifica, se ignoran los datos anteriores
+  mongo-uri: ''
+
+# Permiso para utilizar en cada warp
+# Si se deja en blanco, todos los warps serán públicos
+warp-permission-format: 'warp.{warp}'
+
+# Si se activa, los nombres de los warps serán transformados a mayúsculas
+# De esta forma, podrán introducirse en minúscula, pero no se repetirán los nombres
+warp-name-uppercase: true
+
+# Expresión regular para el nombre de los warps
+# Ver messages.yml: [warp-invalid-name]
+warp-name-expression: '^[A-Z0-9]{4,20}$'
+
+# Tamaño del menú de warps, no se incluye la fila de navegación
+# Válidos: 9, 18, 27, 36, 45
+warp-menu-size: 18
+
+# https://www.spigotmc.org/wiki/itemstack-serialization/
+warp-menu-items:
+  # Item para cada warp
+  warp:
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '&a{warp}'
+      lore:
+          - '&7Click para teletransportarte al warp &f{warp}&7.'
+  # Item para la página siguiente
+  forward:
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '&aPágina siguiente ({current}/{max})'
+  # Item para la página siguiente
+  backward:
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '&aPágina anterior ({current}/{max})'

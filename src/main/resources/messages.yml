@@ -1,0 +1,23 @@
+command-permission-required: "&cNo tienes permiso para utilizar este comando."
+command-player-only: "&cEste comando solo puede ser utilizado por jugadores."
+command-usage-header: "&aComandos de {name}:"
+command-usage-entry: "&7{usage} - &f{description}."
+command-param-not-found: "&cEl parámetro &f'&c{name}&f'&c no ha sido encontrado ({command})."
+command-internal-error: "&cHa ocurrido un error interno al ejecutar el comando."
+
+warp-invalid-name: "&cEl nombre del warp &f'&c{warp}&f'&c no es válido. Debe tener entre 4 y 20 caracteres alfanuméricos."
+warp-reserved-name: "&cEl nombre del warp &f'&c{warp}&f'&c no puede ser utilizado, porque está reservado para otros comandos."
+warp-already-exists: "&cEl warp &f'&c{warp}&f'&c ya existe."
+warp-permission: "&cNo tienes permiso para utilizar el warp {warp}."
+warp-not-found: "&cNo se ha encontrado el warp &f'&c{warp}&f'&c."
+warp-created: "&aWarp {warp} creado correctamente."
+warp-deleted: "&aWarp {warp} eliminado correctamente."
+warp-teleport: "&aHas sido teletransportado al warp {warp}."
+
+warp-menu-title: "&8Warps disponibles ({amount})"
+warp-menu-no-warps: "&cNo hay warps disponibles."
+
+reloaded-config: "&aLas configuraciones han sido recargadas correctamente."
+reloaded-database: "&aLa base de datos ha sido recargada correctamente."
+reloaded-messages: "&aLos mensajes han sido recargados correctamente."
+reloaded-warps: "&aSe han recargado {amount} warps correctamente."

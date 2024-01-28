@@ -1,0 +1,6 @@
+name: MongoWarps
+version: 1.0
+main: warps.mongo.MongoWarps
+author: dani
+api-version: '1.8'
+prefix: MongoWarps
